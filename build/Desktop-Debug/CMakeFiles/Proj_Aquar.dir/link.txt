@@ -1,0 +1,1 @@
+/usr/bin/clang++-18 -DQT_QML_DEBUG -g CMakeFiles/Proj_Aquar.dir/main.cpp.o CMakeFiles/Proj_Aquar.dir/aquarium.cpp.o CMakeFiles/Proj_Aquar.dir/poisson.cpp.o CMakeFiles/Proj_Aquar.dir/forme_poisson.cpp.o -o Proj_Aquar  -lglfw -lGLEW -lGLEW -lGLU -lGL 
