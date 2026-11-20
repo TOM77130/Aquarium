@@ -105,3 +105,7 @@ glm::vec3 Poisson::get_position(){
 glm::vec3 Poisson::get_vitesse(){
     return this->vitesse;
 }
+
+void Poisson::afficher(){
+    int a = 0;
+}

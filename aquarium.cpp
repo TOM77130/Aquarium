@@ -36,3 +36,6 @@ void Aquarium::update(){
         poisson.deplacement(liste_poissons, dimensions_aquarium);
     }
 }
+void Aquarium::afficher(){
+    glm::vec3 dim_aqua = Aquarium::get_dimensions();
+}

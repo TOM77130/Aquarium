@@ -11,6 +11,7 @@ public:
     glm::vec3 get_dimensions();
     std::vector<Poisson> get_poissons();
     void update();
+    void afficher();
 private:
     glm::vec3 dimensions_aquarium;
     std::vector<Poisson> liste_poissons;

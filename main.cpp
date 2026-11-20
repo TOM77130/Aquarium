@@ -3,6 +3,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <math.h>
+#include "aquarium.h"
 
 int main()
 {
@@ -54,12 +55,13 @@ int main()
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 
     //On indique la couleur de fond
-    glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
-    float t=0.f;
+    glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+
+    glm::vec3 dim(20, 40, 10);
+    Aquarium aqua = Aquarium(10, dim);
 
     while(glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS && !glfwWindowShouldClose(window)){
-        t+=0.01;
-        glClearColor(cos(t), 1-cos(t),sin(t), 0.0f);
+
 
         ////////////////On commence par vider les buffers///////////////
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
